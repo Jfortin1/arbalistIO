@@ -1,7 +1,7 @@
 Package: arbalistIO
 Title: Arbalist MultiAssayExperiments
-Version: 0.1.0
-Date: 2025-03-06
+Version: 0.1.1
+Date: 2025-03-12
 Description: 
     MultiAssayExperiment set up for arbalist using C++ bindings to 
     DelayedArrays, in preparation for submission to Bioconductor.

@@ -96,6 +96,17 @@ getExpListFromFragments <- function(
   return(all.exp)
 }
 
+
+#' Create a SingleCellExperiment from a list of delayed matrices
+#' 
+#' Create a SingleCellExperiment from a list of delayed matrices using AmalgamatedArray.
+#' 
+#' @param h5.res.list A list containing delayed matrices with HDF5 backends that will be combined using AmalgamatedArray into a SingleCellExperiment. List item names should be the sample name for the delayed matrix.
+#' @param grs GRange object to be used for the rowRanges of the resulting SingleCellExperiment
+#' 
+#' @return A SingleCellExperiment
+#' 
+#' @author Natalie Fox
 #' @importFrom alabaster.matrix AmalgamatedArray
 #' @importFrom SingleCellExperiment SingleCellExperiment
 #' @importFrom SummarizedExperiment SummarizedExperiment rowRanges<- colData<-
